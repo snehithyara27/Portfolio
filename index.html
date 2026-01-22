@@ -51,7 +51,7 @@
         <ul>
           <li><a href="#hero" class="active">Home<br></a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#Skills">Skills</a></li>
+            <li><a href="#services">Skills</a></li>
           <!-- <li><a href="#portfolio">Portfolio</a></li> -->
          <!--<li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -113,7 +113,7 @@
                 <p><strong>Phone: </strong> <span>+1 (234)-257-9959</span></p>
               </div>
             </div>
-
+            
             <!-- <div class="skills-content skills-animation">
 
               <h5>Skills</h5>
@@ -169,7 +169,7 @@
       </div>
 
     </section><!-- /About Section -->
-
+     <hr>
     <!-- Resume Section -->
     <section id="resume" class="resume section">
 
@@ -182,33 +182,7 @@
       <div class="container">
 
         <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Summary</h3>
-            <div class="resume-item pb-0">
-              <h4>Snehith Reddy Yara</h4>
-              <p><em>• QA Engineer with around 7 years of experience testing enterprise-scale applications across banking, retail, luxury e-commerce, and healthcare domains.
-• Specialized in building scalable UI automation frameworks using Playwright, Selenium WebDriver, and Cypress with Java and Python, utilizing Page Object Model (POM) design patterns.
-• Possess extensive background in financial and payment systems, including the validation of Zelle, ACH, Wire transfers, loan workflows, and real-time transaction processing.
-• Delivered comprehensive UI, Functional, and End-to-End testing strategies, validating high-traffic, customer-facing applications to ensure seamless user journeys.
-• Skilled in API testing using REST Assured and Postman, ensuring the stability of integrations between frontend applications, microservices, and third-party backend systems.
-• Active contributor to DevOps workflows, integrating automated quality gates into Jenkins pipelines to detect defects early at the code-commit level and accelerate the release cycle.
-• Hands-on experience testing mobile applications using Appium, focusing on app stability, biometric login, and critical features across iOS and Android devices.
-• Managed comprehensive cross-browser compatibility strategies using Browser Stack, ensuring a pixel-perfect user experience across diverse web and mobile platforms.
-• Deep experience testing in strictly regulated environments, ensuring adherence to HIPAA (Healthcare) and financial compliance standards while protecting sensitive PII data.
-• Executed performance and load testing using JMeter, simulating real-world traffic spikes to ensure application reliability and speed during peak usage periods.
-• Strong understanding of backend data validation using SQL, writing complex queries to verify the accuracy of transactions, ledger balances, and order workflows.
-• Expert in Root Cause Analysis, going beyond simple bug reporting to provide developers with server logs and network traces, significantly reducing defective resolution time.
-• Proficient in managing the full defect lifecycle using a diverse toolset including JIRA, TestRail, HP QC, and Bugzilla, ensuring transparent reporting across all stakeholder levels.
-• Passionate about team growth, actively mentoring junior engineers on automation standards and coding best practices to uplift the overall quality engineering culture
-.</em></p>
-              <ul>
-                <li>Youngstown, Ohio</li>
-                <li>+1 (234)-257-9959</li>
-                <li>snehithyara@gmail.com</li>
-              </ul>
-            </div>
-
+  
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
               <h4>Masters in Computer Science</h4>
@@ -223,50 +197,64 @@
               <p><em>PNC Bank – Pittsburgh, PA</em></p>
               <p><strong>Project Description:</strong> The project involves testing and quality assurance for PNC Bank’s core banking applications supporting customer onboarding, account management, payments, and loan services. The platform serves millions of retail and commercial banking users and integrates multiple internal systems, APIs, and third-party services. The focus is on ensuring secure, scalable, and reliable banking transactions across web and mobile channels while meeting strict regulatory and compliance standards.</p>
               <ul>
-                <li>Led end-to-end functional, regression, and integration testing for core banking applications, ensuring close to <strong>98% test coverage</strong> across critical loan, payment, and account modules.</li>
-                <li>Designed and maintained robust <strong>automation frameworks</strong> using Selenium, Playwright, and Cypress, reducing full regression execution time from nearly <strong>4 days to under 1.5 days</strong>.</li>
-                <li>Performed extensive API testing and automation using REST Assured and Postman, identifying integration gaps between loan origination, payment processing, and notification services.</li>
-                <li>Stabilized mobile banking applications by implementing <strong>Appium-based automation</strong>, resulting in nearly <strong>25% fewer crash-related issues</strong> reported post-release.</li>
-                <li>Created BDD-style automation scenarios using <strong>Robot Framework</strong>, allowing business stakeholders to clearly understand end-to-end banking workflows.</li>
-                <li>Executed complex backend validations using MySQL and Oracle, verifying loan calculations, interest rates, and account reconciliations across large datasets.</li>
-                <li>Conducted <strong>performance and load testing</strong> using JMeter, identifying slow transaction paths and improving response times by approximately <strong>20%</strong>.</li>
-                <li>Integrated automation suites into <strong>Jenkins CI/CD pipelines</strong>, enabling early detection on every code commit instead of during late-stage testing.</li>
-                <li>Played a key role in <strong>reducing production defect leakage by ~30%</strong>, by strengthening SIT and UAT coverage and validating edge-case scenarios.</li>
-                <li>Mentored junior QA engineers on automation scripting standards, framework structure, and debugging techniques, enabling them to contribute independently within a short time.</li>
-                <li>Collaborated closely with developers working on <strong>Java and Python microservices</strong>, helping debug API, data, and environment-related issues before production deployment.</li>
-                <li>Verified application deployments on <strong>AWS cloud environments</strong>, ensuring security compliance, scalability, and stability across environments.</li>
-                <li>Monitored automation dashboards daily and performed targeted <strong>manual validations for edge cases</strong>, preventing rare but high-impact issues from reaching production.</li>
-                <li>Maintained detailed test execution reports and release sign-off documentation in TestRail, improving transparency and confidence during production releases.</li>
-                <li>Actively participated in Agile ceremonies, providing QA insights during sprint planning, backlog grooming, and retrospectives to improve sprint outcomes.</li>
+                <li>Orchestrated the end-to-end testing strategy for critical "money-movement" modules including Zelle, Wires, and ACH transfers, achieving nearly 98% test coverage for high-risk transaction flows to prevent financial loss.</li>
+                <li>Architected a modern UI automation framework from scratch using Playwright, migrating legacy tests to reduce the regression execution window from 4 days to under 1.5 days, significantly accelerating the release cadence.</li>
+                <li>Designed BDD-style test scenarios using Robot Framework, which bridged the gap between technical teams and business stakeholders, allowing non-technical Product Owners to validate requirements clearly.</li>
+                <li>Performed deep-dive API automation using REST Assured and Postman, validating the complex orchestration between the Loan Origination System and external credit bureaus to ensure accurate real-time decisioning.</li>
+                <li>Stabilized the mobile banking experience using Appium, specifically targeting high-friction features like "Mobile Check Deposit" and "Biometric Login," which resulted in a 25% reduction in crash-related defects post-release.</li>
+                <li>Executed complex backend data validation using SQL queries on Oracle databases, verifying that interest calculations, ledger balances, and loan amortization schedules remained accurate down to the cent.</li>
+                <li>Conducted performance profiling using JMeter to simulate peak-load scenarios (such as "End of Month" processing), identifying and resolving latency bottlenecks in the transaction history API before they impacted users.</li>
+                <li>Integrated automated quality gates into the Jenkins CI/CD pipeline, ensuring that any code violating security or stability standards was rejected immediately, effectively shifting quality checks "to the left."</li>
+                <li>Verified the masking and encryption of Personally Identifiable Information (PII) during test cycles, ensuring that test data management adhered to strict data privacy protocols and internal security standards.</li>
+                <li>Strengthened System Integration Testing (SIT) by validating failure scenarios and edge cases, such as transaction timeouts, partial network failures, and service unavailability, to ensure system resilience.</li>
+                <li>Collaborated directly with microservices developers to debug environment-related configuration issues in AWS, minimizing downtime in lower environments and keeping the testing pipeline flowing without blockers.</li>
+                <li>Mentored junior engineers on Java and Python coding best practices for automation, conducting code reviews that improved the maintainability and reliability of the shared test suite.</li>
+                <li>Maintained audit ready documentation, execution results, and release signoffs in TestRail, providing transparent risk assessment reports to leadership before every major production deployment.</li>
+                <li>Validated application compliance with WCAG 2.1 (Accessibility) standards, ensuring that banking portals were fully usable for customers with disabilities using screen readers and keyboard navigation.</li>
               </ul>
               <p><strong>Environment:</strong> Java, Selenium WebDriver, Cypress, Playwright, Appium, Robot Framework, Postman, REST Assured, JMeter, Jenkins, Git, Maven, Docker, MySQL, Oracle, AWS, Agile/Scrum, JIRA, TestRail</p>
             </div>
           </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
               <h4>QA Engineer</h4>
               <h5>Sep 2022 – Feb 2024</h5>
               <p><em>The Home Depot – Atlanta, GA</em></p>
-              <ul>
-                <li>Designed and executed UI, functional, and regression test cases for key ecommerce features including product search, shopping cart, checkout, and order tracking.</li>
-                <li>Built scalable automation test suites using Cypress and Selenium, reducing manual regression effort by nearly 50% across multiple release cycles.</li>
-                <li>Performed API testing and validations using Postman and REST Assured, ensuring accurate data flow between inventory, payment, and delivery services.</li>
-                <li>Configured Jenkins pipelines to automatically trigger regression suites on pull requests, significantly reducing feedback time from days to just a few hours.</li>
-                <li>Executed performance testing using LoadRunner, simulating high-traffic scenarios during peak shopping events and seasonal sales.</li>
-              </ul>
+                <ul>
+                <li>Executed comprehensive UI and Functional testing for core e-commerce modules, validating critical paths such as the Shopping Cart, Guest Checkout, and Store Finder to ensure pixel-perfect rendering across devices.</li>
+                <li>Built and maintained a scalable UI automation framework using Playwright and JavaScript, implementing the Page Object Model (POM) design pattern to improve script reusability and reduce maintenance time by 30%.</li>
+                <li>Automated complex "Online-to-Offline" user journeys, specifically focusing on Buy Online, Pick Up in Store (BOPIS) and Curbside Pickup, ensuring that digital orders triggered the correct fulfillment status in the store systems.</li>
+                <li>Validated the specific workflows for "Pro Xtra" (B2B) accounts, ensuring that bulk pricing, tax exemptions, and contractor-specific dashboard features function correctly without impacting standard retail users.</li>
+                <li>Reduced the manual regression effort by approximately 40% by automating high-frequency UI scenarios, allowing the team to focus on exploratory testing for new features during shorter sprint cycles.</li>
+                <li>Used Postman to perform API validation as a support layer for UI testing, verifying that frontend product availability and pricing displays matched the backend inventory data in real-time.</li>
+                <li>Conducted rigorous Cross-Browser and Responsive testing, ensuring that the "Interconnected Retail" experience remained consistent whether the customer was browsing on a desktop at home or using a mobile browser in the store aisles.</li>
+                <li>Actively participated in Agile ceremonies using JIRA, collaborating with Product Owners during backlog grooming to clarify acceptance criteria and ensure UI requirements were testable before development began.</li>
+                <li>Acted as the "Quality Gatekeeper" for new deployments by executing daily Smoke and Sanity suites, quickly identifying critical UI blockers and preventing unstable builds from reaching the full testing phase.</li>
+                <li>Collaborated closely with frontend developers to resolve layout inconsistencies and functional gaps, providing detailed screenshots and reproduction steps that reduced the "feedback loop" and accelerated bug fixes.</li>
+                <li>Created and maintained a repository of reusable test artifacts and automation components, ensuring that new team members could quickly onboard and contribute to the testing strategy with consistent standards.</li>
+                <li>Validated application compliance with Accessibility (WCAG) guidelines, ensuring that high-traffic pages like the "Project Calculator" were usable for all customers, including those relying on keyboard navigation and screen readers.</li>
+                </ul>
             </div>
 
             <div class="resume-item">
               <h4>QA Engineer</h4>
               <h5>May 2020 – Aug 2022</h5>
               <p><em>Louis Vuitton – Irving, TX</em></p>
-              <ul>
-                <li>Performed comprehensive functional, regression, and system testing for luxury retail applications covering ecommerce, POS, and order management systems.</li>
-                <li>Developed and maintained automation test suites using Selenium and Cypress, reducing repetitive manual regression effort by nearly 50%.</li>
-                <li>Conducted detailed API testing using Postman, REST Assured, and SoapUI, validating inventory synchronization, shipping updates, and order lifecycle events.</li>
-                <li>Executed complex SQL queries in Oracle and SQL Server, ensuring accuracy of orders, invoices, pricing, and stock availability.</li>
+                <ul>
+                <li>Executed a hybrid automation strategy utilizing Selenium WebDriver and Cypress, moving the team beyond simple manual checks to cover critical "path-to-purchase" flows like Guest Checkout and Store Availability Lookups.</li>
+                <li>Acted as a core voice in the Agile process using JIRA, collaborating with Product Owners during sprint planning to define clear Acceptance Criteria for new features and ensuring "testability" was baked in before development even started.</li>
+                <li>Used Postman to verify the invisible data exchange between the website and the OMS, creating automated collections to ensure that inventory decrements, tax calculations, and shipping logic processed correctly without manual intervention.</li>
+                <li>Simulated thousands of concurrent users using Apache JMeter to prepare the platform for high-traffic moments like Holiday Sales and Exclusive Collection drops, identifying and fixing latency issues in the checkout funnel before they impacted revenue.</li>
+                <li>Managed the cross-browser compatibility strategy using Browser Stack, verifying that the UI remained pixel-perfect across iPhones, iPads, and Android devices to maintain the brand’s luxury image for mobile shoppers.</li>
+                <li>Owned the defect lifecycle in JIRA by providing developers with rich, actionable data—such as logs, network traces, and video recordings—rather than generic bug reports, which significantly reduced the "back-and-forth" and accelerated critical fixes.</li>
+                <li>Executed complex SQL queries to validate order statuses and inventory levels directly in the database, acting as a final safety check to ensure that what the customer saw on the UI matched the reality in the warehouse system.</li>
+                <li>Coordinated User Acceptance Testing (UAT) sessions with business stakeholders and logistics teams, helping them validate that new digital features aligned with actual warehouse operations and fulfillment workflows.</li>
+                <li>Created and managed "Golden Test Data" sets—including specific customer profiles, shipping addresses, and payment methods—to ensure valid test coverage for complex order scenarios involving international shipping and luxury taxes.</li>
+                <li>Monitored automated test execution within the CI/CD pipeline, analyzing failure logs immediately after builds to distinguish between genuine application bugs and environment issues, keeping the deployment pipeline stable.</li>
+                <li>Documented reusable test artifacts and onboarding guides for the QA team, ensuring that knowledge regarding complex retail workflows (like BOPIS - Buy Online, Pick Up in Store) was preserved and easily accessible for new team members.</li>
+                </ul>
               </ul>
             </div>
 
@@ -275,11 +263,17 @@
               <h5>Jul 2018 – Apr 2020</h5>
               <p><em>ResMed – Hyderabad, India</em></p>
               <ul>
-                <li>Authored detailed test cases mapped to business requirements, achieving approximately 95% coverage across patient and provider workflows.</li>
-                <li>Performed backend data validation using SQL queries in MySQL and Oracle, preventing mismatches in patient records and medical data.</li>
-                <li>Executed mobile application testing for device-to-cloud synchronization features, ensuring reliable data transmission across Android and iOS platforms.</li>
+                <li>Delivered comprehensive Manual and Functional testing for critical healthcare modules, ensuring that patient data entry and retrieval workflows were error-free before release.</li>
+                <li>Developed and executed foundational automation scripts using Selenium WebDriver, which helped reduce the manual regression cycle time and increased coverage for repetitive patient enrollment workflows.</li>
+                <li>Validated the integrity of sensitive patient records using MySQL, writing complex SQL queries to ensure that data displayed on the front-end UI matched the backend database exactly—a critical requirement for medical accuracy.</li>
+                <li>Ensured strict adherence to HIPAA compliance standards during all testing phases, protecting Personally Identifiable Information (PII) and sensitive health data from unauthorized exposure.</li>
+                <li>Used Postman to validate the critical data handshake between IoT medical devices and the cloud, verifying that status codes and response payloads were accurate during real-time data transmission.</li>
+                <li>Managed the cross-browser compatibility strategy using Browser Stack, ensuring that doctors and patients had consistent UI experience whether they accessed the portal via Chrome, Edge, or Safari.</li>
+                <li>Supported the team's transition to a DevOps culture by monitoring automated test execution in Jenkins, analyzing build logs to catch early failures in the deployment pipeline.</li>
+                <li>Owned the defect tracking process using Bugzilla, providing developers with high-quality bug reports that included reproduction steps and logs, significantly reducing the "time-to-fix."</li>
+                <li>Authored detailed test scenarios mapped directly to business requirements in HP QC (Quality Center), ensuring 100% traceability between the software features and the testing evidence.</li>
+                <li>Participated actively in Agile ceremonies, collaborating with developers to clarify ambiguity in user stories and ensuring that "Quality" was considered during the requirement gathering phase.</li>
               </ul>
-            </div>
           </div>
 
         </div>
